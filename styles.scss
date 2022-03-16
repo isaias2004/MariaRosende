@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background: #FCD5CE;
+}
+
+// Lato Font Import
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+// Variables
+$color-primary: #FCD5CE;
+$color-primary-light: #fec5bb;
+$color-primary-dark: #fae1dd;
+$color-secondary-dark: #ff8870;
+
+$color-white: #fff;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-dark-1: #999;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #333;
+$color-black: #000;
+
+// Font Sizes
+$font-size-default: 1.6rem;
+
+// Border Radius
+$border-radius-small: 0.2rem;
+$border-radius-medium: 0.3rem;
+$border-radius-large: 5rem;
+
+// Mixins
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin gradient($color-1, $color-2) {
+	background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-2);
+}
+
+// Base
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// 1rem = 10px
+	font-size: 62.5%;
+}
+
+// Typography
+body {
+	box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	color: $color-grey-dark-2;
+	padding: 3rem;
+}
+
+.heading-primary {
+	color: $color-white;
+	text-transform: uppercase;
+	backface-visibility: hidden;
+	margin-bottom: 6rem;
+
+	&--main {
+		display: block;
+		font-size: 6rem;
+		font-weight: 400;
+		letter-spacing: 3.5rem;
+		margin-right: -3.5rem;
+
+		animation-name: moveInLeft;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+	}
+
+	&--sub {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 1.75rem;
+		margin-right: -1.75rem;
+
+		animation: moveInRight 1s ease-out;
+	}
+}
+
+// Buttons
+.btn {
+	&,
+	&:link,
+	&:visited {
+		position: relative;
+		display: inline-block;
+		padding: 1.5rem 4rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: $font-size-default;
+		border-radius: $border-radius-large;
+		backface-visibility: hidden;
+		z-index: 0;
+
+		transition: all 0.2s;
+
+		// Changes for <button>
+		border: none;
+		cursor: pointer;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-radius: $border-radius-large;
+		z-index: -1;
+
+		transition: all 0.4s;
+	}
+
+	&:hover,
+	&:focus {
+		transform: translateY(-0.3rem);
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+		// Changes for <button> on :focus
+		outline: none;
+
+		&::after {
+			opacity: 0;
+			transform: scaleX(1.4) scaleY(1.6);
+		}
+	}
+
+	&:active {
+		transform: translateY(-0.1rem);
+		box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+	}
+
+	&--white {
+		background-color: $color-white;
+		color: $color-grey-dark-2;
+
+		&::after {
+			background-color: $color-white;
+		}
+	}
+
+	&--animated {
+		animation: moveInBottom 0.5s ease-out 0.75s backwards;
+	}
+}
+
+// Header Animations
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+	80% {
+		transform: translateX(1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+	}
+	80% {
+		transform: translateX(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveInBottom {
+	from {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// Navigation
+.navigation {
+	// Hidden Checkbox
+	&__checkbox {
+		display: none;
+
+		// Navigation Functionality
+		&:checked ~ .navigation__background {
+			transform: scale(100);
+		}
+
+		&:checked ~ .navigation__nav {
+			transform: translateX(0);
+			visibility: initial;
+			opacity: 1;
+		}
+	}
+
+	// Input Label -> Styled as a Button
+	&__button {
+		position: fixed;
+		top: 6rem;
+		right: 6rem;
+		width: 7rem;
+		height: 7rem;
+		border-radius: 50%;
+		background-color: $color-white;
+		box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+		cursor: pointer;
+		z-index: 12;
+
+		// Center the Icon
+		text-align: center;
+	}
+
+	// Background Image / Gradient -> Hidden Behind a Label
+	&__background {
+		position: fixed;
+		top: 6.5rem;
+		right: 6.5rem;
+		width: 6rem;
+		height: 6rem;
+		border-radius: 50%;
+		background-image: radial-gradient(
+			$color-primary-light,
+			$color-primary-dark
+		);
+		z-index: 10;
+
+		transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+	}
+
+	// Menu Container
+	&__nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+		z-index: 11;
+
+		transform: translateX(-50%);
+		visibility: hidden;
+		opacity: 0;
+
+		transition: opacity 0.8s ease-in,
+			transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	// Unordered List
+	&__list {
+		@include absolute-center;
+		text-align: center;
+		list-style: none;
+	}
+
+	// List Items with Automatic Counter
+	&__item {
+		margin: 1rem;
+		counter-increment: list;
+	}
+
+	// Item Links
+	&__link {
+		// Automatic Counter
+		&::before {
+			content: '0' counters(list, '');
+			padding-right: 1.2rem;
+		}
+
+		&:link,
+		&:visited {
+			display: inline-block;
+			font-size: 3rem;
+			font-weight: 300;
+			padding: 1rem 2rem;
+			color: $color-white;
+			text-decoration: none;
+			text-transform: uppercase;
+			background-image: linear-gradient(
+				120deg,
+				transparent 0%,
+				transparent 49.9%,
+				$color-white 50%
+			);
+			background-size: 227%;
+
+			transition: all 0.4s;
+		}
+
+		&:hover,
+		&:active {
+			color: $color-primary;
+			background-position: 100%;
+			transform: translateX(1rem);
+		}
+	}
+
+// Icon Design
+	&__icon {
+		display: inline-block;
+		position: relative;
+		width: 3rem;
+		height: 0.5rem;
+		top: 37%;
+
+		transition: transform 0.25s ease-in-out;
+
+		&-span {
+			position: absolute;
+			height: 0.5rem;
+			width: 50%;
+			background: $color-grey-dark-2;
+
+			transition: all 0.5s ease-in;
+
+			&:nth-child(even) {
+				left: 50%;
+				border-radius: 0 0.9rem 0.9rem 0;
+			}
+			&:nth-child(odd) {
+				left: 0;
+				border-radius: 0.9rem 0 0 0.9rem;
+			}
+
+			&:nth-child(1),
+			&:nth-child(2) {
+				transform: translateY(-1rem);
+			}
+			&:nth-child(5),
+			&:nth-child(6) {
+				transform: translateY(1rem);
+			}
+		}
+	}
+
+	&__checkbox:checked + &__button &__icon-span {
+		&:nth-child(1),
+		&:nth-child(6) {
+			transform: rotate(45deg);
+		}
+		&:nth-child(2),
+		&:nth-child(5) {
+			transform: rotate(-45deg);
+		}
+	}
+
+	&__checkbox:checked + &__button &__icon-span {
+		&:nth-child(2),
+		&:nth-child(6) {
+			transform-origin: left;
+		}
+		&:nth-child(1),
+		&:nth-child(5) {
+			transform-origin: right;
+		}
+	}
+
+	&__checkbox:checked + &__button &__icon-span {
+		&:nth-child(3) {
+			left: -50%;
+			opacity: 0;
+		}
+		&:nth-child(4) {
+			left: 100%;
+			opacity: 0;
+		}
+	}
+
+	&__button:hover &__icon-span {
+		&:nth-child(3) {
+			transform: translateX(-0.3rem) scale(1.1);
+		}
+		&:nth-child(4) {
+			transform: translateX(0.3rem) scale(1.1);
+		}
+	}
+
+	&__checkbox:checked + &__button:hover &__icon {
+		transform: rotate(180deg);
+	}
+}
+
+// Header
+.header {
+  @include gradient($color-primary-light, $color-primary-dark);
+	height: 95vh;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+	&__text-box {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+}
+
+.container-maria{
+  margin-left: 15%;
+  margin-top: 6%;
+  width: 700px;
+}
+
+.container-maria h1{
+  font-size: 6em;
+  color: #434343;
+  font-weight: 500;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.container-maria p{
+  font-size: 2.5em;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer p{
+  font-size: 2em;
+}
