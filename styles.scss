@@ -11,9 +11,9 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 // Variables
-$color-primary: #FCD5CE;
-$color-primary-light: #fec5bb;
-$color-primary-dark: #fae1dd;
+$color-primary: #C49CC5;
+$color-primary-light: #fcd5ce;
+$color-primary-dark: #C49CC5;
 $color-secondary-dark: #ff8870;
 
 $color-white: #fff;
@@ -41,7 +41,7 @@ $border-radius-large: 5rem;
 }
 
 @mixin gradient($color-1, $color-2) {
-	background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-2);
+	background-image: linear-gradient(to right bottom, $color-1, $color-2);
 }
 
 // Base
@@ -442,20 +442,34 @@ body {
   font-size: 2.5em;
 }
 
-footer{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  position: absolute;
-  bottom: 0;
+.container-maria a{
+	font-size: 2em;
+	padding: 0.5em;
+	border: 1px solid gray;
+	border-radius: 0.5em;
+	cursor: pointer;
+	list-style: none;
+	text-decoration: none;
+	color: #434343;
+	font-weight: 300;
+}
+
+.container-maria a:hover{
+	transition: all 0.5s ease-in-out;
+	background: #C49CC5;
 }
 
 .footer1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 18%;
 }
 
-footer p{
-  font-size: 2em;
+.footer1 p{
+	font-size: large;
+}
+
+.redes img{
+	width: 35px;
 }

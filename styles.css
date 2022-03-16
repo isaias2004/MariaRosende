@@ -261,7 +261,7 @@ body {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-image: radial-gradient(#fec5bb, #fae1dd);
+  background-image: radial-gradient(#fcd5ce, #C49CC5);
   z-index: 10;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -321,7 +321,7 @@ body {
 }
 
 .navigation__link:hover, .navigation__link:active {
-  color: #FCD5CE;
+  color: #C49CC5;
   background-position: 100%;
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
@@ -414,8 +414,8 @@ body {
 }
 
 .header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff8870), to(#fae1dd));
-  background-image: linear-gradient(to right bottom, #ff8870, #fae1dd);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fcd5ce), to(#C49CC5));
+  background-image: linear-gradient(to right bottom, #fcd5ce, #C49CC5);
   height: 95vh;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -448,19 +448,22 @@ body {
   font-size: 2.5em;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: absolute;
-  bottom: 0;
+.container-maria a {
+  font-size: 2em;
+  padding: 0.5em;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  color: #434343;
+  font-weight: 300;
+}
+
+.container-maria a:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #C49CC5;
 }
 
 .footer1 {
@@ -474,9 +477,14 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 18%;
 }
 
-footer p {
-  font-size: 2em;
+.footer1 p {
+  font-size: large;
+}
+
+.redes img {
+  width: 35px;
 }
 /*# sourceMappingURL=styles.css.map */
