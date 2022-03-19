@@ -5,3 +5,4 @@ $(".hambergur").on("click", () => {
 $(".close").on("click", () => {
   $(".fullscreen").toggleClass("reverse_anim");
 });
+
