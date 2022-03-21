@@ -76,7 +76,6 @@ body {
   z-index: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  border: none;
   cursor: pointer;
 }
 
@@ -245,10 +244,6 @@ body {
   right: 6rem;
   width: 7rem;
   height: 7rem;
-  border-radius: 50%;
-  background-color: #fff;
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 12;
   text-align: center;
@@ -261,7 +256,7 @@ body {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-image: radial-gradient(#fcd5ce, #C49CC5);
+  background-image: radial-gradient(#fcd5ce, #7c5e7c);
   z-index: 10;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -321,7 +316,7 @@ body {
 }
 
 .navigation__link:hover, .navigation__link:active {
-  color: #C49CC5;
+  color: #d68787;
   background-position: 100%;
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
@@ -414,8 +409,8 @@ body {
 }
 
 .header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#fcd5ce), to(#C49CC5));
-  background-image: linear-gradient(to right bottom, #fcd5ce, #C49CC5);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fcd5ce), to(#7c5e7c));
+  background-image: linear-gradient(to right bottom, #fcd5ce, #7c5e7c);
   height: 95vh;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -511,6 +506,11 @@ body {
   border-bottom: 1px solid #a9a9a9;
   width: 270px;
   color: #434343;
+}
+
+.quiensoy img {
+  width: 550px;
+  border: 1px solid #ffb9b9;
 }
 
 .quiensoy-container p {
@@ -806,7 +806,7 @@ ol, li {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-section {
+.estudios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,5 +826,106 @@ section {
   width: 59em;
   font-size: 2em;
   margin-top: 20px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto;
+}
+
+.contact-container img {
+  width: 600px;
+}
+
+.contacto h2 {
+  color: #434343;
+  font-size: 5em;
+  text-align: right;
+}
+
+.linea {
+  border-bottom: 1px solid #a9a9a9;
+  width: 300px;
+  text-align: right;
+  float: right;
+}
+
+.contacto p {
+  font-size: 2em;
+  text-align: right;
+  max-width: 600px;
+  padding-top: 10px;
+}
+
+.container-ubicacion {
+  border: 3px solid black;
+  margin: 0 auto;
+  background: #CDB4DB;
+  margin-top: 200px;
+  width: 1300px;
+  border-radius: 15px;
+}
+
+.container-ubicacion h3 {
+  padding: 50px 0px 0px 120px;
+  font-size: 4em;
+  color: #434343;
+  width: 400px;
+}
+
+.ubicacion-imagen {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col-2 li {
+  color: #434343;
+  font-size: 2.3em;
+  font-weight: bold;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col-2 img {
+  margin-right: 20px;
+  width: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
