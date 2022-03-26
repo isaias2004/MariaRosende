@@ -928,4 +928,21 @@ ol, li {
   margin-right: 20px;
   width: 30px;
 }
+
+.container-form {
+  border: 3px solid black;
+  margin: 0 auto;
+  background: #CDB4DB;
+  margin-top: 200px;
+  width: 1300px;
+  border-radius: 15px;
+}
+
+.container-form h3 {
+  padding: 50px 0px 0px 120px;
+  font-size: 4em;
+  color: #434343;
+  width: 400px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
