@@ -938,11 +938,38 @@ ol, li {
   border-radius: 15px;
 }
 
-.container-form h3 {
-  padding: 50px 0px 0px 120px;
+.container-content-form {
   font-size: 4em;
   color: #434343;
-  width: 400px;
+  width: 100%;
   text-align: center;
+}
+
+form input {
+  background: #CDB4DB;
+  border: 1px solid gray;
+  color: white;
+  padding: 10px;
+  font-size: 0.5em;
+}
+
+form textarea {
+  background: #CDB4DB;
+  border: 1px solid gray;
+  color: white;
+  padding: 10px;
+  font-size: 0.6em;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 80px auto 80px;
+      grid-template-rows: 80px auto 80px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
