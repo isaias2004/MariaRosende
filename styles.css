@@ -4,8 +4,16 @@
   padding: 0;
 }
 
-body {
-  background: #FCD5CE;
+.index {
+  background-image: url(imagenes/perfil.jpeg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color: #FBE1F8;
+}
+
+.sobremi {
+  background-color: #fcd5ce;
 }
 
 *,
@@ -433,14 +441,14 @@ body {
 }
 
 .container-maria h1 {
-  font-size: 6em;
+  font-size: 4em;
   color: #434343;
   font-weight: 500;
   border-bottom: 1px solid #a9a9a9;
 }
 
 .container-maria p {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0.5em;
 }
 
@@ -504,7 +512,6 @@ body {
 .quiensoy-container h2 {
   font-size: 5em;
   border-bottom: 1px solid #a9a9a9;
-  width: 270px;
   color: #434343;
 }
 
@@ -818,8 +825,24 @@ ol, li {
 .estudios h2 {
   font-size: 5em;
   border-bottom: 1px solid #a9a9a9;
-  width: 500px;
   color: #434343;
+  margin-top: 150px;
+}
+
+.te-propongo {
+  text-align: center;
+  font-size: 5em;
+  display: block;
+  color: #303030;
+  margin-top: 250px;
+}
+
+.imagen-grande {
+  width: 50%;
+  margin: 50px auto;
+  display: block;
+  text-align: center;
+  border: 1px solid #d68787;
 }
 
 .estudios ul li {
@@ -943,33 +966,5 @@ ol, li {
   color: #434343;
   width: 100%;
   text-align: center;
-}
-
-form input {
-  background: #CDB4DB;
-  border: 1px solid gray;
-  color: white;
-  padding: 10px;
-  font-size: 0.5em;
-}
-
-form textarea {
-  background: #CDB4DB;
-  border: 1px solid gray;
-  color: white;
-  padding: 10px;
-  font-size: 0.6em;
-}
-
-form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 80px auto 80px;
-      grid-template-rows: 80px auto 80px;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
