@@ -10,7 +10,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <title>CuidarConsciente</title>
 </head>
-<body>
+<body class="contact">
     <header>
         <a href="index.html"><img src="imagenes/logo-cuidar.png" alt="logo de la web" width="500px"></a>
         <div class="navigation">
@@ -54,15 +54,15 @@
             <div class="contacto">
                 <h2>Contacto</h2>
                 <div class="linea"></div>
-                <p>Gracias por visitar mi sitio web Online!
-                    Si te quedaste con ganas de hablarme no dudes de mandarme
-                    un mail o revisar mis redes sociales en el cual estoy atenta y activa 24/7!</p>
+                <p>Para recibir atención presencial y/o virtual,
+                     podes contactarte por este medio y con gusto
+                      te brindaremos una respuesta.</p>
             </div>
         </div>
     </section>
 
     <div class="container-ubicacion">
-        <h3>Ubicación</h3>
+        <h3>¿De donde somos?</h3>
         <div class="col-1">
             <div class="col-2">
                 <ul class="lista-1">
@@ -71,7 +71,7 @@
                 </ul>
                 <ul class="lista-2">
                     <li><img src="imagenes/gmail.png"> mg.rosende@hotmail.com</li>
-                    <li><img src="imagenes/fono.png"> +54 9 11 3599-3171</li>
+                    <li><img src="imagenes/fono.png"> +54 9 1135993171 </li>
                 </ul>
             </div>
             <img src="imagenes/3699487.png" alt="ubicacion logo" width="250px" class="ubicacion-imagen">
@@ -80,13 +80,15 @@
 
     <div class="container-form">
         <div class="container-content-form">
-            <h3>Contactate conmigo!</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <h3>Reserva un turno o realiza tu consulta </h3>
+            <form id="formulario" action="" method="post">
+                <input type="text" name="nombre_y_apellido" id="nombre_y_apellido" title="Ingrese su nombre y apellido" required  placeholder="Nombre completo"/>
+                <input type="email" name="email" id="email" class="required email" title="Ingrese su dirección de correo electrónico" required placeholder="Email"/>
+                <div class="form">
+                    <textarea placeholder="Mensaje" cols="51" rows="10"></textarea>
+                    <input type="submit" id="enviar" value="Enviar" />
+                </div>
+            </form>
         </div>
     </div>
 

@@ -15,6 +15,10 @@
 	background-color: #fcd5ce;
 }
 
+.contact{
+	background: #F3E1DD;
+}
+
 // Lato Font Import
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
@@ -806,7 +810,6 @@ body {
 	padding: 50px 0px 0px 120px;
 	font-size: 4em;
 	color: #434343;
-	width: 400px;
 }
 
 .ubicacion-imagen{
@@ -855,4 +858,30 @@ body {
 	color: #434343;
 	width: 100%;
 	text-align: center;
+	padding: 30px;
 }
+
+.container-content-form input{
+	padding: 15px;
+	background: #CDB4DB;
+	border: 1px solid rgb(129, 129, 129);
+	margin: 15px;
+	border-radius: 3px;
+}
+
+
+.form{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form input, textarea{
+	padding: 15px;
+	background: #CDB4DB;
+	border: 1px solid rgb(129, 129, 129);
+	margin: 15px;
+	border-radius: 3px;
+}
+

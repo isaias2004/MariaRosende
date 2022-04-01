@@ -16,6 +16,10 @@
   background-color: #fcd5ce;
 }
 
+.contact {
+  background: #F3E1DD;
+}
+
 *,
 *::after,
 *::before {
@@ -905,7 +909,6 @@ ol, li {
   padding: 50px 0px 0px 120px;
   font-size: 4em;
   color: #434343;
-  width: 400px;
 }
 
 .ubicacion-imagen {
@@ -966,5 +969,38 @@ ol, li {
   color: #434343;
   width: 100%;
   text-align: center;
+  padding: 30px;
+}
+
+.container-content-form input {
+  padding: 15px;
+  background: #CDB4DB;
+  border: 1px solid #818181;
+  margin: 15px;
+  border-radius: 3px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form input, textarea {
+  padding: 15px;
+  background: #CDB4DB;
+  border: 1px solid #818181;
+  margin: 15px;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=styles.css.map */
