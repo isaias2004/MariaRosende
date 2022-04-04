@@ -996,6 +996,15 @@ ol, li {
           flex-direction: column;
 }
 
+.form a {
+  list-style: none;
+  text-decoration: none;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 0.5em;
+  color: black;
+}
+
 .form input, textarea {
   padding: 15px;
   background: #CDB4DB;
