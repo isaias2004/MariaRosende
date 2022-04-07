@@ -81,14 +81,16 @@
     <div class="container-form">
         <div class="container-content-form">
             <h3>Reserva un turno o realiza tu consulta </h3>
-            <form id="formulario" action="" method="post">
-                <input type="text" name="nombre_y_apellido" id="nombre_y_apellido" title="Ingrese su nombre y apellido" required  placeholder="Nombre completo"/>
-                <input type="email" name="email" id="email" class="required email" title="Ingrese su dirección de correo electrónico" required placeholder="Email"/>
-                <div class="form">
-                    <textarea placeholder="Mensaje" cols="51" rows="10"></textarea>
-                    <a href="#">Enviar</a>
-                </div>
-            </form>
+            <form id="form" action="" class="form">
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name" required type="text" id="name" placeholder="Juan">
+                <label for="email">Correo electrónico <span>*</span></label>
+                <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+                <button type="submit" class="btn primary full">enviar mensaje</button>
+              </form>
+              <a href="mailto:mailto:mg.rosende@hotmail.com" id="trucazo">asd</a>
         </div>
     </div>
 
@@ -102,5 +104,22 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const $form = document.querySelector('#form') 
+        const $buttonMailto = document.querySelector('#trucazo') 
+
+        $form.addEventListener('submit', handleSubmit)
+
+        function handleSubmit(event){
+        event.preventDefault()
+        const form = new FormData(this)
+        console.log(form.get('name'))
+        $buttonMailto.setAttribute('href', `mailto:lawicki76@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+        $buttonMailto.click()
+        
+    }
+
+    </script>
 </body>
 </html>

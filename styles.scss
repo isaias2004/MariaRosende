@@ -870,27 +870,43 @@ body {
 }
 
 
-.form{
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-direction: column;
-}
 
-.form a{
-	list-style: none;
-	text-decoration: none;
-	border: 1px solid gray;
-	padding: 10px;
+.form {
+	max-inline-size: 550px;
+	margin: auto;
+  }
+  
+  .form label {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: .5em;
+	padding-inline-start: .5em;
 	font-size: 0.5em;
-	color: black;
-}
-
-.form input, textarea{
-	padding: 15px;
+  }
+  
+  .form label span {
+	color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 1.5rem;
+	border-radius: .5em;
+	border: 1px solid #858C94;
 	background: #CDB4DB;
-	border: 1px solid rgb(129, 129, 129);
-	margin: 15px;
-	border-radius: 3px;
-}
+  }
+  .form textarea {
+	margin-block-end: 2em;
+	font-family: inherit;
+	padding: 1.5rem;
+	margin-left: 15px;
+  }
+  
+  input::-webkit-input-placeholder {
+	color: #0F0A0A88;
+  }
 
+  #trucazo{
+	  opacity: 0;
+  }
