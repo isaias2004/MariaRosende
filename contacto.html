@@ -90,7 +90,7 @@
                 <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
                 <button type="submit" class="btn primary full">enviar mensaje</button>
               </form>
-              <a href="mailto:mailto:mg.rosende@hotmail.com" id="trucazo">asd</a>
+              <a href="mailto:mailto:mg.rosende@hotmail.com" id="trucazo" target="_blank">asd</a>
         </div>
     </div>
 
@@ -115,7 +115,7 @@
         event.preventDefault()
         const form = new FormData(this)
         console.log(form.get('name'))
-        $buttonMailto.setAttribute('href', `mailto:lawicki76@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+        $buttonMailto.setAttribute('href', `mailto:mg.rosende@hotmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
         $buttonMailto.click()
         
     }
