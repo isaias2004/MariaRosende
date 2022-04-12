@@ -736,4 +736,66 @@ input::-webkit-input-placeholder {
 #trucazo {
   opacity: 0;
 }
+
+.background-image-index {
+  background-image: url(imagenes/perfil.jpeg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  background-position-x: 150%;
+}
+
+.container-blog h2 {
+  color: #434343;
+  font-size: 5em;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.blogs {
+  margin-top: 10em;
+  padding: 5em;
+  width: 65%;
+  border: 1px solid #777;
+  border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.blogs h3 {
+  font-size: 3em;
+  color: #333;
+  padding: 10px;
+}
+
+.blogs p {
+  font-size: 2em;
+  padding: 10px;
+}
+
+.blogs a {
+  padding: 10px;
+  font-size: 2em;
+  border: 1px solid #333;
+  color: #000;
+  text-decoration: none;
+  border-radius: 9px;
+  float: right;
+}
+
+.blogs a:hover {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  background: #333;
+  color: white;
+}
+
+#right {
+  float: right;
+}
 /*# sourceMappingURL=styles.css.map */
