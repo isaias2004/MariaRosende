@@ -754,7 +754,7 @@ input::-webkit-input-placeholder {
 }
 
 .blogs {
-  margin-top: 10em;
+  margin: 5em;
   padding: 5em;
   width: 65%;
   border: 1px solid #777;
