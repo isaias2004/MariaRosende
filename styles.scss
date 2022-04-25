@@ -744,3 +744,42 @@ body {
 #right{
 	float: right;
 }
+
+@media only screen and (max-width: 768px) {
+	.container-maria{
+		width: 100%;
+		margin: 50px 0px 0px 0px;
+	}
+
+	.container-maria h1{
+		max-width: 100%;
+		font-size: 2em;
+	}
+	.container-maria p{
+		max-width: 100%;
+		margin: 0;
+		font-size: 1.5em;
+	}
+	header img{
+		width: 250px;
+	}
+	.imagen-grande{
+		width: 500px ;
+		display: block;
+		text-align: center;
+	}
+	.background-image-index{
+		background-image: none;
+	}
+	.estudios div{
+		max-width: 90%;
+	}
+	.estudios div h2{
+		font-size: 4em;
+		max-width: none;
+		width: none;
+	}
+	.estudios div ul{
+		max-width: 60%;
+	}
+}
