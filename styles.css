@@ -895,5 +895,65 @@ input::-webkit-input-placeholder {
     font-size: 1em;
     margin-right: 20%;
   }
+  .contacto h2 {
+    font-size: 3em;
+  }
+  .contacto p {
+    font-size: 1.5em;
+  }
+  .contact-container img {
+    display: none;
+  }
+  .container-ubicacion {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-ubicacion h3 {
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+  }
+  .col-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-1 ul li {
+    font-size: 1.5em;
+  }
+  .col-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ubicacion-imagen {
+    width: 100px;
+  }
+  .container-form {
+    width: 90%;
+  }
+  .container-content-form h3 {
+    font-size: .7em;
+  }
+  .form input {
+    margin: 0;
+  }
+  .form textarea {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
