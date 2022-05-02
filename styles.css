@@ -842,7 +842,7 @@ input::-webkit-input-placeholder {
     width: none;
   }
   .estudios div ul li {
-    font-size: 1.3em;
+    font-size: 1.5em;
     width: 90%;
   }
   .te-propongo {
@@ -872,6 +872,28 @@ input::-webkit-input-placeholder {
   }
   .footer1 .redes {
     margin-top: 10%;
+  }
+  .container-blog h2 {
+    font-size: 2.3em;
+    margin-top: 10px;
+  }
+  .blogs {
+    height: 80px;
+    margin: 50px;
+    padding: 0;
+    width: 90%;
+  }
+  .blogs h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+  .blogs div p {
+    display: none;
+  }
+  .blogs a {
+    font-size: 1em;
+    margin-right: 20%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
