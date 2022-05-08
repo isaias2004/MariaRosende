@@ -5,6 +5,7 @@
 
 .index{
 	background-color: #FBE1F8;
+	padding: 0;
 }
 
 .sobremi{
@@ -433,7 +434,7 @@ body {
 
 .container-maria{
   margin-left: 15%;
-  margin-top: 6%;
+  padding-top: 6%;
   width: 80%;
 }
 
@@ -692,8 +693,9 @@ body {
 	background-image: url(imagenes/perfil.jpeg);
 	background-repeat: no-repeat;
 	background-position: right;
-	background-size: auto;
-	background-position-x: 150%;
+	background-size: contain;
+	background-attachment: fixed;
+	background-position-x: 165%;
 }
 
 .container-blog h2{
