@@ -811,6 +811,79 @@ input::-webkit-input-placeholder {
   float: right;
 }
 
+.container-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  row-gap: 50px;
+}
+
+.container-equipo h2 {
+  font-size: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.title-equipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto;
+}
+
+.title-equipo img {
+  width: 300px;
+}
+
+.card-mery {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-mery h4 {
+  font-size: 4em;
+  color: #333;
+}
+
+.card-mery img {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  border: 1px solid;
+}
+
+.card-mery i {
+  font-size: 2em;
+}
+
+.card-mery ul li {
+  list-style: none;
+  font-size: 2em;
+  color: #434343;
+}
+
 @media only screen and (max-width: 768px) {
   .navigation__button {
     top: 2.5rem;
