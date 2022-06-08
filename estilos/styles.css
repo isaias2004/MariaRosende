@@ -852,7 +852,12 @@ input::-webkit-input-placeholder {
   width: 300px;
 }
 
+.mery .card-mery {
+  margin: 7% auto;
+}
+
 .card-mery {
+  background-color: #ecc7c0;
   border: 1px solid rgba(0, 0, 0, 0.2);
   max-width: 600px;
   padding: 10px;
@@ -872,6 +877,11 @@ input::-webkit-input-placeholder {
   display: block;
   text-align: center;
   border: 1px solid;
+  border-radius: 7px;
+  width: 250px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-mery i {
@@ -880,11 +890,29 @@ input::-webkit-input-placeholder {
 
 .card-mery ul li {
   list-style: none;
-  font-size: 2em;
+  font-size: 1.8em;
   color: #434343;
 }
 
+.card-mery h3 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.card-mery p {
+  font-size: 1.8em;
+  color: #434343;
+}
+
+.guillermina {
+  margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 768px) {
+  .index {
+    background-color: #FBE1F8;
+    padding: 25px;
+  }
   .navigation__button {
     top: 2.5rem;
     right: 2rem;
@@ -894,15 +922,15 @@ input::-webkit-input-placeholder {
     right: 2.5rem;
   }
   .container-maria {
-    width: 100%;
-    margin: 50px 0px 0px 0px;
+    width: 97%;
+    margin: 50px 10px;
   }
   .container-maria h1 {
-    max-width: 100%;
+    max-width: 90%;
     font-size: 3em;
   }
   .container-maria p {
-    max-width: 100%;
+    max-width: 95%;
     margin: 0;
     font-size: 1.5em;
     margin-bottom: 3%;
@@ -1039,6 +1067,35 @@ input::-webkit-input-placeholder {
   }
   .form textarea {
     margin: 0;
+  }
+  .container-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .title-equipo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 50px auto;
+  }
+  .title-equipo img {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
