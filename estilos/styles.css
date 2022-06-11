@@ -453,6 +453,7 @@ body {
   font-size: 2em;
   margin-bottom: 0.5em;
   max-width: 60%;
+  color: #434343;
 }
 
 .container-maria a {
@@ -471,6 +472,7 @@ body {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #dab2ab;
+  letter-spacing: 1px;
 }
 
 .footer1 {
@@ -485,6 +487,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 18%;
+}
+
+footer {
+  padding: 2%;
 }
 
 .footer1 p {
@@ -543,6 +549,14 @@ body {
   border-bottom: 1px solid #a9a9a9;
   color: #434343;
   margin-top: 150px;
+}
+
+.estudios div p {
+  color: #434343;
+}
+
+.estudios div i {
+  color: #7e7e7e;
 }
 
 .te-propongo {
@@ -957,6 +971,11 @@ input::-webkit-input-placeholder {
   .estudios div p {
     font-size: 1.5em;
     width: 90%;
+    text-align: justify;
+    color: #434343;
+  }
+  .estudios div p i {
+    color: #7e7e7e;
   }
   .te-propongo {
     font-size: 1.5em;
