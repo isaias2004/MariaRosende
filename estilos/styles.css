@@ -6,7 +6,6 @@
 
 .index {
   background-color: #FBE1F8;
-  padding: 0;
 }
 
 .sobremi {
@@ -265,7 +264,7 @@ body {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-image: radial-gradient(#fcd5ce, #7c5e7c);
+  background-image: radial-gradient(#fcd5ce, #d68787);
   z-index: 10;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -347,7 +346,7 @@ body {
   position: absolute;
   height: 0.5rem;
   width: 50%;
-  background: #777;
+  background: #999;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
@@ -920,6 +919,31 @@ input::-webkit-input-placeholder {
 
 .guillermina {
   margin-bottom: 50px;
+}
+
+.container-talleres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 15px;
+  margin-top: 8%;
+}
+
+.taller {
+  margin: 0px auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: block;
+  text-align: center;
+}
+
+.taller img {
+  border: 1px solid #ffede2;
+  border-radius: 7px;
+  width: 50%;
 }
 
 @media only screen and (max-width: 768px) {

@@ -5,7 +5,6 @@
 
 .index{
 	background-color: #FBE1F8;
-	padding: 0;
 }
 
 .sobremi{
@@ -256,7 +255,7 @@ body {
 		border-radius: 50%;
 		background-image: radial-gradient(
 			$color-primary-light,
-			$color-primary-dark
+			$color-primary
 		);
 		z-index: 10;
 
@@ -343,7 +342,7 @@ body {
 			position: absolute;
 			height: 0.5rem;
 			width: 50%;
-			background: $color-grey-dark-2;
+			background: $color-grey-dark-1;
 
 			transition: all 0.5s ease-in;
 
@@ -854,6 +853,27 @@ footer{
 	margin-bottom: 50px;
 }
 
+
+.container-talleres{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 10px;
+	row-gap: 15px;
+	margin-top: 8%;
+}
+
+.taller{
+	margin: 0px auto;
+	justify-self: center;
+	display: block;
+	text-align: center;
+}
+
+.taller img{
+	border: 1px solid #ffede2;
+	border-radius: 7px;
+	width: 50%;
+}
 
 
 @media only screen and (max-width: 768px) {
