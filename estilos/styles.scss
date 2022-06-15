@@ -1034,4 +1034,22 @@ footer{
 	.title-equipo img{
 		display: none;
 	}
+	.container-talleres{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		margin-top: 8%;
+	}
+	.taller{
+		margin: 0px auto;
+		justify-self: center;
+		display: block;
+		text-align: center;
+	}
+	.taller img{
+		border: 1px solid #ffede2;
+		border-radius: 7px;
+		width: 70%;
+	}
+
 }
