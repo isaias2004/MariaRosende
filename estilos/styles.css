@@ -946,6 +946,10 @@ input::-webkit-input-placeholder {
   width: 50%;
 }
 
+.brenda {
+  margin-bottom: 150px;
+}
+
 @media only screen and (max-width: 768px) {
   .index {
     background-color: #FBE1F8;
@@ -1163,6 +1167,9 @@ input::-webkit-input-placeholder {
     border: 1px solid #ffede2;
     border-radius: 7px;
     width: 70%;
+  }
+  .brenda {
+    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
