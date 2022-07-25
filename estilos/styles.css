@@ -950,6 +950,41 @@ input::-webkit-input-placeholder {
   margin-bottom: 150px;
 }
 
+.taller {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taller a {
+  padding: 5px;
+  color: #000;
+  border: 1px solid gray;
+  width: 6em;
+  font-size: 1.8em;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.taller a:hover {
+  background: #434343;
+  color: #cccccc;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
   .index {
     background-color: #FBE1F8;

@@ -879,6 +879,32 @@ footer{
 		margin-bottom: 150px;
 }
 
+.taller{
+	border: 1px solid gray;
+	padding: 5px;
+	border-radius: 7px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+.taller a{
+	padding: 5px;
+	color: #000;
+	border: 1px solid gray;
+	width: 6em;
+	font-size: 1.8em;
+	margin: 10px;
+	border-radius: 7px;
+}
+
+.taller a:hover{
+	background: #434343;
+	color: rgb(204, 204, 204);
+	text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
 
 	.index{
