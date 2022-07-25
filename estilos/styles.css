@@ -932,18 +932,11 @@ input::-webkit-input-placeholder {
   margin-top: 8%;
 }
 
-.taller {
-  margin: 0px auto;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  display: block;
-  text-align: center;
-}
-
 .taller img {
   border: 1px solid #ffede2;
   border-radius: 7px;
   width: 50%;
+  padding-bottom: 60px;
 }
 
 .brenda {
@@ -951,7 +944,6 @@ input::-webkit-input-placeholder {
 }
 
 .taller {
-  border: 1px solid gray;
   padding: 5px;
   border-radius: 7px;
   display: -webkit-box;
@@ -967,22 +959,53 @@ input::-webkit-input-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100%;
 }
 
 .taller a {
   padding: 5px;
-  color: #000;
-  border: 1px solid gray;
+  color: #363636;
+  border: 1px solid white;
   width: 6em;
   font-size: 1.8em;
+  text-transform: uppercase;
   margin: 10px;
   border-radius: 7px;
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  text-decoration: none;
 }
 
 .taller a:hover {
-  background: #434343;
-  color: #cccccc;
+  -webkit-box-shadow: 0 0 40px 40px #17BC9C inset;
+          box-shadow: 0 0 40px 40px #17BC9C inset;
+  color: #08382e;
   text-decoration: none;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-top: -60px;
+}
+
+.price p {
+  color: #333;
+  font-size: 2.5em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1205,6 +1228,10 @@ input::-webkit-input-placeholder {
   }
   .brenda {
     margin-bottom: 25px;
+  }
+  .price {
+    margin: 0 auto;
+    margin-top: -60px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
