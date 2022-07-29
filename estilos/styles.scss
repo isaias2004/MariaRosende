@@ -1098,8 +1098,13 @@ footer{
 			margin-bottom: 25px;
 	}
 	.price{
-		margin: 0 auto;
-		margin-top: -60px;
+			margin: 0 auto;
+			margin-top: -65px;
+	}
+	.price{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 }
