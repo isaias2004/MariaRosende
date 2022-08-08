@@ -906,7 +906,7 @@ footer{
 
 .price{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-direction: row;
 	align-items: center;
 	width: 50%;
@@ -918,6 +918,20 @@ footer{
 	font-size: 2.5em;
 }
 
+.price h2{
+	color: #333;
+}
+
+.price input{
+	width: 80%;
+	cursor: pointer;
+}
+
+.price label{
+	margin: 10px;
+	align-items: center;
+	text-align: center;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -1105,6 +1119,9 @@ footer{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+	}
+	.price{
+		font-size: 0.8em;
 	}
 
 }

@@ -990,8 +990,9 @@ input::-webkit-input-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1006,6 +1007,23 @@ input::-webkit-input-placeholder {
 .price p {
   color: #333;
   font-size: 2.5em;
+}
+
+.price h2 {
+  color: #333;
+}
+
+.price input {
+  width: 80%;
+  cursor: pointer;
+}
+
+.price label {
+  margin: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1244,6 +1262,9 @@ input::-webkit-input-placeholder {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .price {
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
