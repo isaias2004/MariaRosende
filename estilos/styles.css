@@ -314,7 +314,7 @@ body {
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #303030;
+  color: #333;
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 49.9%, #fff 50%);
@@ -932,64 +932,84 @@ input::-webkit-input-placeholder {
   margin-top: 8%;
 }
 
+.taller img {
+  border: 1px solid #ffede2;
+  border-radius: 7px;
+  width: 50%;
+  padding-bottom: 60px;
+}
+
 .brenda {
   margin-bottom: 150px;
 }
 
-.container-corazon{
+.container-corazon {
   background: #FFFFFF;
   height: 500px;
   width: 325px;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 13px 23px -10px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 13px 23px -10px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 13px 23px -10px rgba(0,0,0,0.75);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-shadow: 0px 13px 23px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 13px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 23px -10px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
 }
 
-.container-corazon img{
+.container-corazon img {
   width: 65%;
 }
 
-.container-corazon h2{
+.container-corazon h2 {
   font-weight: 380;
   font-size: 3em;
   max-width: 200px;
   text-align: center;
-  color: rgb(36, 36, 36);
+  color: #242424;
   text-transform: uppercase;
 }
 
-.precio{
-  border-top: 0.5px solid rgb(167, 167, 167);
-  border-bottom: 0.5px solid rgb(167, 167, 167);
+.precio {
+  border-top: 0.5px solid #a7a7a7;
+  border-bottom: 0.5px solid #a7a7a7;
   width: 75%;
-} 
+}
 
-
-.precio-4000{
+.precio-4000 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #000;
   font-weight: 380;
   font-size: 2.5em;
   text-transform: uppercase;
-  margin:8px 0 8px 0;
+  margin: 8px 0 8px 0;
 }
 
-.precio-4000 a{
+.precio-4000 a {
   color: #000;
   text-decoration: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-bottom: 1px solid #5bd300;
 }
 
-.precio-4000 a:hover{
-  text-shadow: 3px 2px 5px rgba(0,0,0,0.6);
+.precio-4000 a:hover {
+  text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 
@@ -997,14 +1017,13 @@ input::-webkit-input-placeholder {
   margin-bottom: 8px;
 }
 
-.precio ul li{
+.precio ul li {
   color: #000;
   list-style: none;
   font-size: 1.6em;
   text-align: left;
   font-weight: 300;
 }
-
 
 @media only screen and (max-width: 768px) {
   .index {
