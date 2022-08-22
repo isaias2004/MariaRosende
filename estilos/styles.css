@@ -1231,39 +1231,81 @@ input::-webkit-input-placeholder {
             flex-direction: column;
     margin-top: 8%;
   }
-  .taller {
-    margin: 0px auto;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    display: block;
-    text-align: center;
-  }
-  .taller img {
-    border: 1px solid #ffede2;
-    border-radius: 7px;
-    width: 70%;
-  }
   .brenda {
     margin-bottom: 25px;
   }
-  .price {
-    margin: 0 auto;
-    margin-top: -65px;
-  }
-  .price {
+  .container-corazon {
+    background: #FFFFFF;
+    height: 500px;
+    width: 325px;
+    border-radius: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-shadow: 0px 13px 23px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 13px 23px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 13px 23px -10px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
   }
-  .price {
-    font-size: 0.8em;
+  .container-corazon img {
+    width: 65%;
+  }
+  .container-corazon h2 {
+    font-weight: 380;
+    font-size: 3em;
+    max-width: 200px;
+    text-align: center;
+    color: #242424;
+    text-transform: uppercase;
+  }
+  .precio {
+    border-top: 0.5px solid #a7a7a7;
+    border-bottom: 0.5px solid #a7a7a7;
+    width: 75%;
+  }
+  .precio-4000 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    color: #000;
+    font-weight: 380;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 8px 0 8px 0;
+  }
+  .precio-4000 a {
+    color: #000;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 1px solid #5bd300;
+  }
+  .precio-4000 a:hover {
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.6);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .precio ul {
+    margin-bottom: 8px;
+  }
+  .precio ul li {
+    color: #000;
+    list-style: none;
+    font-size: 1.6em;
+    text-align: left;
+    font-weight: 300;
   }
 }
 /*# sourceMappingURL=styles.css.map */
