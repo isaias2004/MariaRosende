@@ -93,7 +93,7 @@
                 <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
                 <button type="submit" class="btn primary full">enviar mensaje</button>
               </form>
-              <a href="mailto:mailto:mg.rosende@hotmail.com" id="trucazo" target="_blank">asd</a>
+              <a href="mailto:mailto:cuidarconscientemujer@gmail.com" id="trucazo" target="_blank">asd</a>
         </div>
     </div>
 
@@ -103,7 +103,7 @@
             <div class="redes">
                 <a href="https://www.instagram.com/cuidar.consciente/" target="_blank"><img src="imagenes/ig.png" alt="redes" width="100px"></a>
                 <a href="https://www.facebook.com/Lic.mariarosende" target="_blank"><img src="imagenes/facebook.png" alt="redes" width="100px"></a>
-                <a href="mailto:mg.rosende@hotmail.com?Subject=Hola%20Mery!%20"><img src="imagenes/gmail.png" alt="redes" width="100px"></a>
+                <a href="mailto:cuidarconscientemujer@gmail.com?Subject=Hola%20Mery!%20"><img src="imagenes/gmail.png" alt="redes" width="100px"></a>
             </div>
         </div>
     </footer>
@@ -118,7 +118,7 @@
         event.preventDefault()
         const form = new FormData(this)
         console.log(form.get('name'))
-        $buttonMailto.setAttribute('href', `mailto:mg.rosende@hotmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+        $buttonMailto.setAttribute('href', `mailto:cuidarconscientemujer@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
         $buttonMailto.click()
         
     }
