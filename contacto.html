@@ -118,9 +118,9 @@
         event.preventDefault()
         const form = new FormData(this)
         console.log(form.get('name'))
-        $buttonMailto.setAttribute('href', `mailto:cuidarconscientemujer@gmail.com?subject= ${form.get('name')} &body=${form.get('message')}`)
+        $buttonMailto.setAttribute('href', `mailto:cuidarconscientemujer@gmail.com?subject=Mensaje Página Web &body=${form.get('message')}`)
         $buttonMailto.click()
-        
+        // ${form.get('name')}
     }
 
     </script>
