@@ -547,7 +547,7 @@ footer {
   font-size: 5em;
   border-bottom: 1px solid #a9a9a9;
   color: #434343;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .estudios div p {
@@ -568,7 +568,7 @@ footer {
 
 .imagen-grande {
   width: 40%;
-  margin: 200px auto 0px;
+  margin: 100px auto 0px;
   display: block;
   text-align: center;
   border: 1px solid #d68787;
@@ -1025,6 +1025,13 @@ input::-webkit-input-placeholder {
   font-weight: 300;
 }
 
+.corazon-img {
+  width: 20%;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+}
+
 @media only screen and (max-width: 768px) {
   .index {
     background-color: #FBE1F8;
@@ -1258,11 +1265,11 @@ input::-webkit-input-placeholder {
     margin: 0 auto;
   }
   .container-corazon img {
-    width: 65%;
+    width: 55%;
   }
   .container-corazon h2 {
     font-weight: 380;
-    font-size: 3em;
+    font-size: 2.8em;
     max-width: 200px;
     text-align: center;
     color: #242424;
@@ -1306,6 +1313,12 @@ input::-webkit-input-placeholder {
     font-size: 1.6em;
     text-align: left;
     font-weight: 300;
+  }
+  .corazon-img {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
