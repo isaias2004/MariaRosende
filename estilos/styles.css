@@ -1051,6 +1051,17 @@ i {
   color: red;
 }
 
+.video-yoga{
+  display: block;
+  text-align: center;
+}
+
+.video-yoga video{
+  max-width: 325px;
+  margin-top: 70px;
+  border-radius: 7px;
+}
+
 @media only screen and (max-width: 768px) {
   .index {
     background-color: #FBE1F8;
