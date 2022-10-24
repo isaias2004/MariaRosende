@@ -1048,18 +1048,38 @@ input::-webkit-input-placeholder {
 
 i {
   font-size: 2em;
-  color: red;
+  color: #757575;
 }
 
-.video-yoga{
+.video-yoga {
   display: block;
   text-align: center;
+  margin-top: 160px;
 }
 
-.video-yoga video{
-  max-width: 325px;
-  margin-top: 70px;
-  border-radius: 7px;
+.video-yoga h2 {
+  color: #333;
+  font-size: 3em;
+}
+
+.video-yoga video {
+  margin-top: 40px;
+  width: 325px;
+}
+
+.listado {
+  color: #333;
+  font-size: 2em;
+  width: 700px;
+  margin: 70px auto;
+}
+
+.listado li {
+  list-style: none;
+}
+
+.listado p {
+  margin-top: 25px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1349,6 +1369,43 @@ i {
     display: block;
     text-align: center;
     margin: 30px auto;
+  }
+  .video-yoga {
+    display: block;
+    text-align: center;
+    margin-top: 160px;
+  }
+  .video-yoga h2 {
+    color: #333;
+    font-size: 3em;
+  }
+  .video-yoga video {
+    margin-top: 40px;
+    width: 325px;
+  }
+  .listado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #333;
+    font-size: 1.7em;
+    max-width: 400px;
+    margin: 70px auto;
+  }
+  .listado li {
+    list-style: none;
+  }
+  .listado p {
+    margin-top: 25px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

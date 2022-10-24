@@ -966,8 +966,40 @@ footer{
 
   i {
 	font-size: 2em;
-	color: red;
+	color: rgb(117, 117, 117);
   }
+
+
+.video-yoga {
+	display: block;
+	text-align: center;
+	margin-top: 160px;
+}
+
+.video-yoga h2{
+	color: #333;
+	font-size: 3em;
+}
+
+.video-yoga video{
+	margin-top: 40px;
+	width: 325px;
+}
+
+.listado{
+	color: #333;
+	font-size: 2em;
+	width: 700px;
+	margin: 70px auto;
+}
+
+.listado li{
+	list-style: none;
+}
+
+.listado p{
+	margin-top: 25px;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -1201,4 +1233,40 @@ footer{
 		text-align: center;
 		margin: 30px auto;
 	  }
+
+
+	  .video-yoga {
+		display: block;
+		text-align: center;
+		margin-top: 160px;
+	}
+	
+	.video-yoga h2{
+		color: #333;
+		font-size: 3em;
+	}
+	
+	.video-yoga video{
+		margin-top: 40px;
+		width: 325px;
+	}
+	
+	.listado{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		color: #333;
+		font-size: 1.7em;
+		max-width: 400px;
+		margin: 70px auto;
+	}
+	
+	.listado li{
+		list-style: none;
+	}
+	
+	.listado p{
+		margin-top: 25px;
+	}
 }
