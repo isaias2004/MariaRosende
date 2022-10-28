@@ -1001,6 +1001,7 @@ footer{
 	margin-top: 25px;
 }
 
+
 @media only screen and (max-width: 768px) {
 
 	.index{
@@ -1244,6 +1245,7 @@ footer{
 	.video-yoga h2{
 		color: #333;
 		font-size: 2.5em;
+		text-align: center;
 	}
 	
 	.video-yoga video{
@@ -1257,13 +1259,15 @@ footer{
 		justify-content: space-around;
 		align-items: center;
 		color: #333;
-		max-width: 400px;
-		font-size: 1.8em;
+		font-size: 1.5em;
+		width: 300px;
 		margin: 70px auto;
 	}
 	
 	.listado li{
 		list-style: none;
+		margin: 0 auto;
+		text-align: center;
 	}
 	
 	.listado p{

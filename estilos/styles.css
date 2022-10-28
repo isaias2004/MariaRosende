@@ -1378,6 +1378,7 @@ i {
   .video-yoga h2 {
     color: #333;
     font-size: 2.5em;
+    text-align: center;
   }
   .video-yoga video {
     margin-top: 40px;
@@ -1397,12 +1398,14 @@ i {
         -ms-flex-align: center;
             align-items: center;
     color: #333;
-    max-width: 400px;
-    font-size: 1.8em;
+    font-size: 1.5em;
+    width: 300px;
     margin: 70px auto;
   }
   .listado li {
     list-style: none;
+    margin: 0 auto;
+    text-align: center;
   }
   .listado p {
     margin-top: 25px;
