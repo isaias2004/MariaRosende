@@ -1082,10 +1082,6 @@ i {
   margin-top: 25px;
 }
 
-#alimentacion{
-  font-size: 2.6em;
-}
-
 @media only screen and (max-width: 768px) {
   .index {
     background-color: #FBE1F8;
