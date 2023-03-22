@@ -497,7 +497,8 @@ footer {
 }
 
 .redes img {
-  width: 35px;
+  width: 4em;
+  padding: 3px;
 }
 
 .quiensoy {
